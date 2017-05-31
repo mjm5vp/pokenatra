@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/pokestyle.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="pokemon">
+      <h2><a href="/pokemon">All Pokemon</a></h2>
+      <div class="containareon"><img src="<%=@pokemon.img_url%>" alt="<%=@pokemon.name%>"></div>
+      <p class="containareon">Name: <%= @pokemon.name %></p>
+      <p class="containareon">Type: <%= @pokemon.poke_type %></p>
+      <p class="containareon">CP: <%= @pokemon.cp %></p>
+      <p class="containareon">Trainer: <%= @pokemon.trainer.name%></p>
+      <p class="containareon"><a class="containareon" href="/pokemon/<%=@pokemon.id%>/edit">Edit</a></p>
+
+    </div>
+  </body>
+</html>

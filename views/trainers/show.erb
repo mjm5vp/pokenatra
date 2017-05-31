@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/pokestyle.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="pokemon">
+      <h2 class="containareon"><a href="/trainers">All Trainers</a></h2>
+      <div class="containareon"><img class="test" src="<%=@trainer.img_url%>" alt="<%=@trainer.name%>"></div>
+      <p class="containareon">Name: <%= @trainer.name %></p>
+      <p class="containareon">Level: <%= @trainer.level %></p>
+      <p class="containareon">Pokemon:
+        <% @trainer.pokemons.each do |pokemon| %>
+          <%= pokemon.name %>
+        <% end %>
+      </p>
+      <p class="containareon"><a  class="containareon" href="/trainers/<%=@trainer.id%>/edit">Edit</a></p>
+    </div>
+  </body>
+</html>

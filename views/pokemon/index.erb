@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/css/pokestyle.css">
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <h2 class="containareon">All Pokemon</h2>
+
+    <% @pokemons = @pokemons.sort_by do |pokemon| %>
+      <% pokemon.id %>
+    <% end %>
+    <% @pokemons.each do |pokemon| %>
+      <div class="pokemon">
+        <h4 class="containareon"><a href="/pokemon/<%=pokemon.id%>"><%=pokemon.name%></a></h4>
+        <div class="containareon"><img src="<%=pokemon.img_url%>" alt="<%=pokemon.name%>"></div>
+      </div>
+    <% end %>
+    <h3 class="containareon"><a href="/pokemon/new">Add New Pokemon</a></h3>
+    <h4 class="containareon"><a href="/">Return to Menu</a></h4>
+  </body>
+</html>

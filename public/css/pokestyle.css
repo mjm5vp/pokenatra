@@ -1,4 +1,4 @@
-/*
+
 
 Uncomment for sick pokestyle
 
@@ -16,6 +16,7 @@ a, p, h2, h3 {
 }
 
 
+
 body {
   background-image: url(../images/pokedex.png);
   background-attachment: fixed;
@@ -30,9 +31,10 @@ a:hover {
   animation: pulse 1s infinite;
 }
 .containareon, h1 {
+  /*max-height: 500px;*/
   box-sizing: border-box;
   padding: 10px;
-  width: 50%;
+  width: 70%;
   margin: auto;
   background-color: rgba(255, 255, 255, .8);
   text-align: center;
@@ -53,6 +55,16 @@ a:hover {
   border-bottom-color: rgba(225, 225, 225, .5);
 }
 
+a{
+  margin: 50px;
+}
+
+#button{
+  margin-top: 50px;
+  width: 50%;
+  height: 10%;
+}
+
 @keyframes pulse {
   0% {
     text-shadow: 4px 4px 3px rgba(255, 255, 255, .3);
@@ -70,4 +82,4 @@ a:hover {
     text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
     background-color: rgba(0, 0, 0, .1);
   }
-}*/
+}
